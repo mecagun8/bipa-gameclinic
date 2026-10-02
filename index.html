@@ -78,8 +78,8 @@
   /* Map */
   .mapwrap{flex:1 1 auto;position:relative;min-width:0}
   #map{position:absolute;inset:0}
-  /* OSM 기본 타일은 색이 진해서 마커가 묻히므로 채도를 낮춰 옅은 배경처럼 보이게 한다 */
-  .base-tiles{filter:grayscale(.7) brightness(1.04) contrast(.92)}
+  /* OSM 기본 타일은 색이 진해서 마커가 묻히므로 밝기를 올리고 대비를 낮춰 파스텔 톤으로 만든다 */
+  .base-tiles{filter:saturate(.8) brightness(1.1) contrast(.82)}
 
   /* Loading */
   .loading{position:absolute;inset:0;z-index:900;display:grid;place-items:center;background:rgba(241,245,249,.92);
